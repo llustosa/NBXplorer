@@ -86,7 +86,7 @@ namespace NBXplorer
 		{
 			await Task.WhenAll(_Repositories.Select(kv => kv.Value.StartAsync()).ToArray());
             foreach(var rep in _Repositories)
-                await rep.Value.Track(new AddressTrackedSource(new BitcoinPubKeyAddress("miMFy5fpKvUTYxVuHm3xPRQ5xyzpTFDbxS")));
+                await rep.Value.Track(new AddressTrackedSource(new BitcoinPubKeyAddress("mmP2k8Ybzi6nfmFKJWUQMkxCfTSJ978LNQ")));
         }
 
 		public Repository GetRepository(NBXplorerNetwork network)
